@@ -4,19 +4,14 @@ lambdata - a collection of Data Science helper functions
 
 import setuptools
 
-REQUIRED = [
-    "numpy",
-    "pandas",
-    "matplotlib",
-    "scikit-learn"
-]
+REQUIRED = ["numpy", "pandas"]
 
 with open("README.md", "r") as file:
     LONG_DESCRIPTION = file.read()
 
 setuptools.setup(
     name="lambdata-xpandalord",
-    version="0.0.10",
+    version="0.1.0",
     author="xpandalord",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
