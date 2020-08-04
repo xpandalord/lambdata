@@ -16,7 +16,7 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
     name="lambdata-xpandalord",
-    version="0.0.6",
+    version="0.0.10",
     author="xpandalord",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
