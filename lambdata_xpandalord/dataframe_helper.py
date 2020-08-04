@@ -40,8 +40,13 @@ class Report:
         return mz_table
 
     # Report a confusion matrix, with labels for easier interpretation
-    def report_confusion_matrix(actual, predicted):
-        """Plot a confusion matrix given the actual values and predicted values."""
+    def report_confusion_matrix(self, actual, predicted):
+        """Plot a confusion matrix given the actual values and predicted values.
+
+        Keyword arguments:
+         actual -- an array of the true target values
+         predicted -- an array of the target values predicted by the estimator
+        """
 
         data = {"y_Actual": actual, "y_Predicted": predicted}
 
