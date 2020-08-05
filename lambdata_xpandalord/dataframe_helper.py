@@ -6,6 +6,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import plot_confusion_matrix
 
+
 class Report:
     def __init__(self, df, target):
         self.df = df
@@ -88,4 +89,4 @@ class Report:
     def plot_confusion_matrix(self, estimator, X, y):
         """Plot a confusion matrix given the estimator, data matrix, and target vector."""
 
-        plot_confusion_matrix(estimator, X, y, values_format='.0f')
+        plot_confusion_matrix(estimator, X, y, values_format=".0f")
