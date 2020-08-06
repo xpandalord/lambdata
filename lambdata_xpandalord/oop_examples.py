@@ -26,7 +26,7 @@ class SocialMediaUser:
 
     def receive_upvote(self):
         self.upvotes += 1
-        
+
     def is_popular(self):
         return self.upvotes > 100
 

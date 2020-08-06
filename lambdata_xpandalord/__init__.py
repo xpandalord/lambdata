@@ -9,6 +9,7 @@ import lambdata_xpandalord.dataframe_helper
 
 TEST = pd.DataFrame(np.ones(10))
 
+
 def increment(number):
     """Increases a given number by 1."""
     return number + 1
