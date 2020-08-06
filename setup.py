@@ -11,14 +11,14 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
     name="lambdata-xpandalord",
-    version="0.1.8",
+    version="0.1.9",
     author="xpandalord",
     description="A collection of Data Science helper functions",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     url="https://github.com/xpandalord/lambdata",
     packages=setuptools.find_packages(),
-    python_requires=">=3.8",
+    python_requires=">=3.7",
     install_requires=REQUIRED,
     classifiers=[
         "Programming Language :: Python :: 3",

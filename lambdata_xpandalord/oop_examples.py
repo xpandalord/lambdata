@@ -20,13 +20,13 @@ class Complex:
 
 
 class SocialMediaUser:
-    def __init__(self, name):
+    def __init__(self, name, upvotes=0):
         self.name = name
-        self.upvotes = 0
+        self.upvotes = upvotes
 
     def receive_upvote(self):
         self.upvotes += 1
-
+        
     def is_popular(self):
         return self.upvotes > 100
 
