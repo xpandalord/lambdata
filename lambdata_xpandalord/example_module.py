@@ -11,7 +11,14 @@ raw_data = {
 }
 results = pd.DataFrame(
     raw_data,
-    columns=["first_name", "last_name", "age", "sex", "Test1_Score", "Test2_Score"],
+    columns=[
+        "first_name",
+        "last_name",
+        "age",
+        "sex",
+        "Test1_Score",
+        "Test2_Score",
+    ],
 )
 
 COLORS = ("Blue", "Orange", "Red", "Green", "Violet", "Cyan")

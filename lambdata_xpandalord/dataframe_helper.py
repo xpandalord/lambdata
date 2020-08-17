@@ -37,7 +37,9 @@ class Report:
         )
 
         print(
-            "There are " + str(mz_table.shape[0]) + " columns that have missing values."
+            "There are "
+            + str(mz_table.shape[0])
+            + " columns that have missing values."
         )
 
         return mz_table
@@ -47,7 +49,10 @@ class Report:
 
         # Split df into train & test. 80/20 split.
         train, test = train_test_split(
-            self.df, test_size=0.20, stratify=self.df[self.target], random_state=42
+            self.df,
+            test_size=0.20,
+            stratify=self.df[self.target],
+            random_state=42,
         )
 
         # Split train into train & val. 80/20 split.
@@ -67,7 +72,9 @@ class Report:
 
         return X_df, y_df
 
-    def report_fit_predict_score(self, estimator, X_train, y_train, X_val, y_val):
+    def report_fit_predict_score(
+        self, estimator, X_train, y_train, X_val, y_val
+    ):
         """Report the training and validation accuracy.
         Returns the fitted estimator and the two prediction arrays.
         """

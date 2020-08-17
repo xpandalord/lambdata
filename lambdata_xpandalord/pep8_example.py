@@ -37,7 +37,7 @@ class Example3(object):
             return bar
         else:
             some_string = (
-                "Indentation in multiline strings should not be touched. Only actual"
-                " code should be reindented."
+                "Indentation in multiline strings should not be touched. Only"
+                " actual code should be reindented."
             )
             return (sys.path, some_string)
